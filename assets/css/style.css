@@ -240,7 +240,13 @@ footer p {
         
 }
 @media (max-width: 480px) {
-
+    .landing-innertext h1 {
+        font-size: 1rem;
+    }
+    
+    .landing-innertext h2 {
+        font-size: 1rem;
+    }
     .card {
         width:100%;
     }
