@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 20;
+    background-color:#212121;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler{
+    width: 47px;
+    height: 34px;
+    background-color: #212121;
+    border:none;
+}
+.navbar-toggler .line{
+    width: 100%;
+    float: left;
+    height: 2px;
+    background-color: #FAF6F2;
+    margin-bottom: 5px;
+}
+
+.navbar a {
+    text-transform: uppercase;
+    font-size: larger;
+    margin-right: 20px;
+    color: #FAF6F2;
+}
+
+.navbar a:active{
+    text-decoration: underline;
+}
+
+.landing {
+    display: flex;
+}
+
+.landing-image {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex: 0 1 50vw;
+}
+
+.landing-text {
+    display:flex;
+    justify-content: center;
+    align-items: center;  
+    flex: 0 1 50vw;
+    height: 100vh;
+    padding: 1rem;
+    background:#e9e9e9;
+}
+
+.landing-innertext {
+   text-align: center;
+}
+
+.landing-innertext h1 {
+    font-weight: bold;
+}
+
+.landing-innertext h2 {
+    text-transform: uppercase;
+}
+
+.profile {
+    width: 400px;
+    align-items: center;
+}
+
+.icons{
+    font-size: 50px;
+}
+
+#icon {
+    color: black;
+    width: 80px;
+}
+
+#icon:hover { 
+    transform: scale(1.1); 
+    }
+
+.about {
+    height: 100vh;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.header {
+    padding: 2rem;
+    text-align: center;
+}
+
+.about-info {
+    padding: 3rem 6rem;
+    text-align: justify;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.about-info h4 {
+    font-size: 1.75rem;
+}
+.about-info a {
+    text-decoration: none;
+}
+
+.about-info strong {
+    color: white;
+}
+.projects {
+    padding-top: 4rem; 
+    background-color: #e9e9e9;
+}
+
+.projects-list {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.card {
+    margin: 2rem;
+    box-shadow: 0 0 50px rgb(172, 172, 172);
+    text-align: center;
+}
+
+.card img {
+    margin: auto;
+    padding: 3rem 1rem 1rem 1rem;
+    float: center;
+    width:300px;
+    border-radius: 15px 15px;
+}
+
+.card-body {
+    margin: .5rem;
+}
+
+#website {
+    font-size: 35px;
+}
+footer {
+    text-align: center;
+    display: block;
+    padding: 2rem;
+    background-color: #212121;
+}
+
+footer h3 {
+    color: white;
+}
+.icon{
+    text-align: center;
+    font-size: 35px;
+}
+
+.icon a {
+    margin-right: 20px;
+}
+
+#icon-footer {
+    color: white;
+    text-align: center;
+}
+
+footer #icon:hover { 
+    transform: scale(1.2); 
+    }
+
+footer p {
+    text-align: center;
+    color: white;
+}
+
+/* Screen Sizes 960px and smaller */
+      @media (max-width: 960px) {
+        .landing {
+            display: block;
+            height: 100vh;
+        }
+        .landing-image {
+            height: 50vh;
+        }
+    
+        .landing-image img {
+            width:275px;
+            margin-top: 4rem;
+        }
+    
+        .landing-text {
+            height: 50vh;
+        }
+
+        .icon {
+            padding-left:60px;
+            width: 40px;
+        }
+
+        .header h2 {
+            font-size: 1.7rem;
+            padding-top: 1rem;
+        }
+        
+        .about {
+            padding-top: 0rem; 
+            padding-bottom: 0rem; 
+            height: 100%;
+        }
+
+        .about-info {
+            padding: 2.5rem 5rem;
+        }
+
+        .about-info h4 {
+            font-size: 1.5rem;
+        }
+    
+        .icon{
+            display: inline;
+        }
+        
+}
+@media (max-width: 480px) {
+
+    .card {
+        width:100%;
+    }
+    .card img {
+        width:250px;
+    }
+}
