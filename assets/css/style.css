@@ -241,11 +241,11 @@ footer p {
 }
 @media (max-width: 480px) {
     .landing-innertext h1 {
-        font-size: 1.23rem;
+        font-size: 2rem;
     }
     
     .landing-innertext h2 {
-        font-size: 1.25rem;
+        font-size: 2rem;
     }
     .card {
         width:100%;
